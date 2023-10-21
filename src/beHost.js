@@ -1,9 +1,18 @@
-import { getDatabase, ref, set } from "firebase/database";
+// import { getDatabase, ref, set } from "firebase/database";
 import { useState } from 'react';
-import ReactDOM from 'react-dom/client';
+// import ReactDOM from 'react-dom/client';
 
+const onBackButtonEvent = (e) => {
 
-class MealForm extends React.Component {
+  e.preventDefault();var currentLocation = window.location.pathname;
+  
+  history.push('${currentLocation}/mypage/new')};
+  
+  useEffect(() => {window.addEventListener('popstate', onBackButtonEvent);return () => {window.removeEventListener('popstate', onBackButtonEvent);
+  
+  };}, [])
+
+class Form extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -49,14 +58,14 @@ class MealForm extends React.Component {
     }
   }
 
-function writeUserData(userId, name, email, ingredients, price, start, end) {
-  const db = getDatabase();
-  set(ref(db, 'hosts/' + userId), {
-    name: name,
-    email: email,
-    ingredients : ingredients,
-    price: price,
-    start: start,
-    end: end
-  });
-}
+// function writeUserData(userId, name, email, ingredients, price, start, end) {
+//   const db = getDatabase();
+//   set(ref(db, 'hosts/' + userId), {
+//     name: name,
+//     email: email,
+//     ingredients : ingredients,
+//     price: price,
+//     start: start,
+//     end: end
+//   });
+// }
