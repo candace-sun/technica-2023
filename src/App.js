@@ -1,23 +1,12 @@
 import logo from './logo.svg';
+import Host from './components/host.js';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Host name={"Rachel"} date={"10/23/23"} price={"$5"}/>
     </div>
   );
 }
