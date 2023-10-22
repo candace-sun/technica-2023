@@ -63,6 +63,15 @@ button:active{
   font-size: 20px;
 }
 
+.bottom-chunk{
+  background-color: #f6fff8;
+  border-style: dashed;
+  border-color: gray;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 50px;
+}
+
 .title{
   margin-top: 0;
   font-size: 50px;
