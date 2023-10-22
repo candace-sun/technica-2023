@@ -12,28 +12,28 @@
   <body>
     <div class="everything">
       <p class="info">Information</p>
-      <input class="name" type="text" placeholder="Displayed name">
-      <input class="name" type="text" placeholder="Menu name">
+      <input class="name" type="text" placeholder="Displayed name" required>
+      <input class="name" type="text" placeholder="Menu name" required>
       <p>Phone Number</p>
-      <input class="price" type="text" placeholder="000-000-0000">
+      <input class="price" type="tel" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
       <p>Venmo</p>
-      <input class="price" type="text" placeholder="@Username">
+      <input class="price" type="text" placeholder="@Username" required>
+      <p>Room Number</p>
+      <input class="price" type="text" placeholder="0000" required>
+      <p>Floor Number</p>
+      <input class="price" type="text" placeholder="0" required>
       <p class="money">Price</p>
       <input class="price" type="text" placeholder="$0">
       <div class="start">
         <p>Start Date</p>
-        <input class="time" type="text" placeholder="MM/DD/YY">
+        <input class="time" type="date" placeholder="MM/DD/YY" required>
         <p>Start Time</p>
-        <input class="time" type="text" placeholder="00:00">
-        <select class="period">
-          <option>AM</option>
-          <option>PM</option>
-        </select>
+        <input class="time" type="time" placeholder="00:00" required>
       </div>
       <p>
         Ingredients
       </p>
-      <input class="ingre" type="text" placeholder="Eggs, potatoes, ...">
+      <input class="ingre" type="text" placeholder="Eggs, potatoes, ..." required>
 
       <p>Allergens</p>
       <input class="ingre" type="text" placeholder="No allergens">
@@ -41,12 +41,31 @@
 
 
 
-      <button class="post">
+      <button onclick="openForm()" class="post">
         Post!
       </button>
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container"></form>
+          <div class="back-pop">
+            <div class="popup">
+              <p class="final-submit">Thank you for submitting!</p>
+              <p>This confirms that your account and post are uploaded and can now be found on the listing page.</p>
+              <button type="button" class="close" onclick="window.location.href='../public/index.html';">Close</button>
+            </div>
+          </div>
+          
+      </div>
     </div>
     
-    
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
   </body>
 </html>
     

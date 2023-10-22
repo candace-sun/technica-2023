@@ -56,6 +56,7 @@ input{
   padding-bottom: 5px;
   font-size: 16px;
   border-width: 2px;
+  border-color: gray;
 
 }
 
@@ -92,4 +93,73 @@ input{
   margin-top: 14px;
   box-shadow: none;
   margin-bottom: 11px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  width: 50%;
+}
+
+.spesificPropertiesDiv{
+    display: block;
+    position: fixed; 
+    top: 0; bottom: 0; left: 0; right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 6000;
+    text-align: center;
+}
+
+.back-pop{
+  display: block;
+    position: fixed; 
+    top: 0; bottom: 0; left: 0; right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(60, 60, 60, 0.507);
+    z-index: 6000;
+    text-align: center;
+}
+
+.popup{
+  background-color: #adffc7;
+  opacity: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 100px;
+  border-radius: 20px;
+}
+
+.final-submit{
+  font-size: 30px;
+
+}
+
+.close{
+  background-color: white;
+  border: none;
+  color: black;
+  height: 55px;
+  width: 440px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 4px 4px 4px gray;
+  transition: background-color .3s;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.close:hover{
+  opacity: 0.6;
+}
+
+.close:active{
+  margin-left: 4px;
+  margin-top: 39px;
+  box-shadow: none;
 }
