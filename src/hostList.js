@@ -5,7 +5,7 @@ import './App.css';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-function App() {
+function HostList() {
 
   //hosts?.map((host,i)=>(
   //  <Host key={i} name={host.name} date={host.date} price={host.price} menu={host.menu} dietary={host.dietary}/>
@@ -25,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default HostList;

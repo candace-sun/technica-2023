@@ -13,7 +13,20 @@
   left: 70px;
   position: fixed;
 
+<<<<<<< HEAD
 }
+=======
+.body{
+  background-color: #e8ffef;
+  align-items: center;
+  font-family: Poppins;
+  width: 600px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+
+>>>>>>> 501814847ac488d1ce2e06a1b7807ab4b3c11d4f
 .everything{
   background-color: #f6fff8;
   border-style: dashed;
