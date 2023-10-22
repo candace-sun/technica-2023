@@ -11,19 +11,21 @@ import HostList from './hostList.js';
 import InfoSignUp from './infoSignUp.js';
 
 import { initializeApp } from "firebase/app";
+
+import { HashRouter } from 'react-router-dom';
 import { getFirestore } from "firebase/firestore";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <BrowserRouter>
+      <HashRouter>
       <Routes>
           <Route index element={<Home />} />
           <Route path="/beHost" element={<BeHost />} />
           <Route path="/hostList" element={<HostList />} />
           <Route path="/infoSignUp" element={<InfoSignUp />} />
       </Routes>
-      </BrowserRouter>
+      </HashRouter>
   </React.StrictMode>
 );
 

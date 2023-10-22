@@ -5,12 +5,24 @@ import { Link } from "react-router-dom";
 
 import './beHost.css'; 
 
+import { db } from "./index.js"
 
 function BeHost() {
+// function writeUserData(userId, name, email, ingredients, price, start, end) {
+//   const db = getDatabase();
+//   set(ref(db, 'hosts/' + userId), {
+//     name: name,
+//     email: email,
+//     ingredients : ingredients,
+//     price: price,
+//     start: start,
+//     end: end
+//   });
 
   document.body.style = 'background: #e8ffef;';
   return (
     <div className="beHost-body">
+
     <div className="beHost-everything">
       <p className="sign-text">
         Sign Up
@@ -18,10 +30,12 @@ function BeHost() {
       <input className="beHost-name" type="text" placeholder="First name"/>
       <input className="beHost-last" type="text" placeholder="Last name"/>
       <input className="beHost-email" type="text" placeholder="Email"/>
+      <input className="beHost-password" type="password" placeholder="Password"/>
       <button className="sign-up">
       <Link to="/infoSignUp" className="testlink">Sign Up and Continue</Link>
       </button>
     </div>
+
     </div>
     );
 }
