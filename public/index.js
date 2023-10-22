@@ -41,7 +41,9 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-import { getDatabase, connectDatabaseEmulator } from "firebase/database";
+// import { getDatabase, connectDatabaseEmulator } from "firebase/database";
+import { getDatabase, connectDatabaseEmulator } from 'https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js'
+
 
 const db = getDatabase();
 if (location.hostname === "localhost") {
