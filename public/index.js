@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import App from './App';
+import reportWebVitals from '../src/reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -40,6 +40,14 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+import { getDatabase, connectDatabaseEmulator } from "firebase/database";
+
+const db = getDatabase();
+if (location.hostname === "localhost") {
+  // Point to the RTDB emulator running on localhost.
+  connectDatabaseEmulator(db, "127.0.0.1", 9000);
+} 
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

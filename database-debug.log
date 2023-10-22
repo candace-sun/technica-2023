@@ -1,0 +1,8 @@
+01:29:54.607 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+01:29:54.685 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000
+01:29:59.208 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - technica-de047-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 61ms, init: 0ms
+01:29:59.244 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace technica-de047-default-rtdb status Active to Active
+01:34:35.671 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.
+01:34:35.677 [NamespaceSystem-akka.actor.default-dispatcher-9] INFO com.firebase.core.namespace.Terminator$Terminator - 1 actors left to terminate: technica-de047-default-rtdb
+01:34:35.681 [NamespaceSystem-akka.actor.default-dispatcher-9] INFO com.firebase.core.namespace.NamespaceActor - stopped namespace actor for technica-de047-default-rtdb
+01:34:35.683 [Thread-0] INFO com.firebase.server.forge.App$ - Graceful shutdown complete.
