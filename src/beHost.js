@@ -8,17 +8,18 @@ import './beHost.css';
 
 function BeHost() {
 
+  document.body.style = 'background: #e8ffef;';
   return (
-    <div className="body">
-    <div className="everything">
+    <div className="beHost-body">
+    <div className="beHost-everything">
       <p className="sign-text">
         Sign Up
       </p>
-      <input className="name" type="text" placeholder="First name"/>
-      <input className="last" type="text" placeholder="Last name"/>
-      <input className="email" type="text" placeholder="Email"/>
+      <input className="beHost-name" type="text" placeholder="First name"/>
+      <input className="beHost-last" type="text" placeholder="Last name"/>
+      <input className="beHost-email" type="text" placeholder="Email"/>
       <button className="sign-up">
-      <Link to="/infoSignUp">Sign Up and Continue</Link>
+      <Link to="/infoSignUp" className="testlink">Sign Up and Continue</Link>
       </button>
     </div>
     </div>

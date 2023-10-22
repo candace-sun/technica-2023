@@ -14,7 +14,7 @@ function Home() {
             <div className="top-bar">
             <div className="left-top">
                 <div className="logo-left-top">
-                <img className="logo" src="unnamed.jpg"/>
+                <img className="logo" src="unnnamed.png"/>
                 </div>
                 <p className="group-name">
                 Terp2Table
@@ -24,7 +24,7 @@ function Home() {
                 
                 
                 <a href="/beHost.html"></a>
-                <Link to="/beHost">Be a Host!</Link>
+                <Link to="/beHost" className="testlink">Be a Host!</Link>
                 </button>
             </div>
             
@@ -53,7 +53,7 @@ function Home() {
                 </button>
                 <button className="building">
                     
-                <Link to="/hostList">Commons 7</Link>
+                <Link to="/hostList"  className="testlink">Commons 7</Link>
                 </button>
                 <button className="building">
                 Terp Row

@@ -8,6 +8,12 @@
   font-weight: 600;
 }
 
+.wrapper {
+  background-color: #e8ffef;
+  width:100vw;
+  height:100vh;
+}
+
 .info{
   font-size: 30px;
   margin-top:0;

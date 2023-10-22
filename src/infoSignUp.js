@@ -1,46 +1,49 @@
 
+import './infoSignUp.css'; 
+
 export default function InfoSignUp(props) {
-
+    document.body.style = 'background: #e8ffef;';
     return (
-    <body>
-        <div className="everything">
-        <p className="info">Information</p>
-        <input className="name" type="text" placeholder="Displayed name"/>
-        <input className="name" type="text" placeholder="Menu name"/>
-        <p>Phone Number</p>
-        <input className="price" type="text" placeholder="000-000-0000"/>
-        <p>Venmo</p>
-        <input className="price" type="text" placeholder="@Username"/>
-        <p className="money">Price</p>
-        <input className="price" type="text" placeholder="$0"/>
-        <div className="start">
-            <p>Start Date</p>
-            <input className="time" type="text" placeholder="MM/DD/YY"/>
-            <p>Start Time</p>
-            <input className="time" type="text" placeholder="00:00"/>
-            <select className="period">
-            <option>AM</option>
-            <option>PM</option>
-            </select>
-        </div>
-        <p>
-            Ingredients
-        </p>
-        <input className="ingre" type="text" placeholder="Eggs, potatoes, ..."/>
-
-        <p>Allergens</p>
-        <input className="ingre" type="text" placeholder="No allergens"/>
-        
+        <div className="wrapper">
+    <div className="infoSignUp-body">
 
 
+<div class="infoSignUp-everything">
+  <p class="info">Information</p>
+  <input class="infoSignUp-name" type="text" placeholder="Displayed name" required/>
+  <input class="infoSignUp-name" type="text" placeholder="Menu name" required/>
+  <p>Phone Number</p>
+  <input class="price" type="tel" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required/>
+  <p>Venmo</p>
+  <input class="price" type="text" placeholder="@Username" required/>
+  <p>Room Number</p>
+  <input class="price" type="text" placeholder="0000" required/>
+  <p>Floor Number</p>
+  <input class="price" type="text" placeholder="0" required/>
+  <p class="money">Price</p>
+  <input class="price" type="text" placeholder="$0"/>
+  <div class="start">
+    <p>Start Date</p>
+    <input class="time" type="date" placeholder="MM/DD/YY" required/>
+    <p>Start Time</p>
+    <input class="time" type="time" placeholder="00:00" required/>
+  </div>
+  <p>
+    Ingredients
+  </p>
+  <input class="ingre" type="text" placeholder="Eggs, potatoes, ..." required/>
 
-        <button className="post">
-            Post!
-        </button>
-        </div>
-        
-        
-    </body>
+  <p>Allergens</p>
+  <input class="ingre" type="text" placeholder="No allergens"/>
+  
+
+
+  <button onclick="openForm()" class="post">
+    Post!
+  </button>
+    </div>
+    </div>
+    </div>
     );
 
   }

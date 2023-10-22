@@ -12,6 +12,7 @@
   top: 40px;
   left: 70px;
   position: fixed;
+  padding:10px;
 
 }
 .left-top{
@@ -83,6 +84,11 @@
   margin-top: 0;
   font-size: 50px;
 
+}
+
+.testlink {
+  color:black;
+  text-decoration: none;
 }
 
 .intro{
