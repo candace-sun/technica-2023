@@ -1,6 +1,10 @@
 import logo from './logo.svg';
 import Stack from 'react-bootstrap/Stack';
 import Host from './components/host.js';
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Outlet,BrowserRouter, Routes, Route } from "react-router-dom";
+import BeHost from './beHost.js';
 import './index.css';
 
 function Home() {
@@ -8,18 +12,22 @@ function Home() {
     return (
         <div className="body">
             <div className="top-bar">
-                <div className="left-top"/>
+            <div className="left-top">
                 <div className="logo-left-top">
-                    <img class="logo" src="unnamed.jpg"/>
+                <img className="logo" src="unnamed.jpg"/>
                 </div>
                 <p className="group-name">
-                    Terp2Table
+                Terp2Table
                 </p>
-                </div>
-                <button onclick="window.location.href='../src/beHost.html';" className="host-button"> 
-                    Be a host!
+            </div>
+                <button className="host-button">
+                
+                
+                <a href="/beHost.html"></a>
+                <Link to="/beHost">Be a Host!</Link>
                 </button>
-
+            </div>
+            
             <div>
                 <p className="title"> Guest?</p>
                 <p className="intro"> Select your living space below</p>
@@ -44,7 +52,8 @@ function Home() {
                 Commons 6
                 </button>
                 <button className="building">
-                Commons 7
+                    
+                <Link to="/hostList">Commons 7</Link>
                 </button>
                 <button className="building">
                 Terp Row

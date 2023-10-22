@@ -5,11 +5,23 @@ import Home from './Home';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { initializeApp } from "firebase/app";
+import { Link } from "react-router-dom";
+import { Outlet,BrowserRouter, Routes, Route } from "react-router-dom";
+import BeHost from './beHost.js';
+import HostList from './hostList.js';
+import InfoSignUp from './infoSignUp.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home />
+      <BrowserRouter>
+      <Routes>
+          <Route index element={<Home />} />
+          <Route path="/beHost" element={<BeHost />} />
+          <Route path="/hostList" element={<HostList />} />
+          <Route path="/infoSignUp" element={<InfoSignUp />} />
+      </Routes>
+      </BrowserRouter>
   </React.StrictMode>
 );
 
