@@ -1,18 +1,5 @@
-// const onBackButtonEvent = (e) => {
-
-//   e.preventDefault();var currentLocation = window.location.pathname;
-
-//   history.push('${currentLocation}/mypage/new')};
-
-//   useEffect(() => {window.addEventListener('popstate', onBackButtonEvent);return () => {window.removeEventListener('popstate', onBackButtonEvent);
-
-//   };}, [])
-
 // google sign in
 
-// import { GoogleAuthProvider } from "firebase/auth";
-// import { getAuth, signInWithPopup, getRedirectResult, GoogleAuthProvider } from "firebase/auth";
-// import { initializeApp } from "firebase/app";
 import { getAuth, signInWithPopup, getRedirectResult, GoogleAuthProvider, connectAuthEmulator} from 'https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js'
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js'
 
@@ -53,6 +40,11 @@ function signInWithGoogle() {
     const user = result.user;
     // IdP data available using getAdditionalUserInfo(result)
     // ...
+
+    // TODO
+    // store sign in info into database
+    // redirect them to the form page
+    
   }).catch((error) => {
     // Handle Errors here.
     const errorCode = error.code;
@@ -85,18 +77,3 @@ function signInWithGoogle() {
     // ...
   });
 }
-
-// import { getDatabase, connectDatabaseEmulator } from "firebase/database";
-
-
-// function writeUserData(userId, name, email, ingredients, price, start, end) {
-//   const db = getDatabase();
-//   set(ref(db, 'hosts/' + userId), {
-//     name: name,
-//     email: email,
-//     ingredients : ingredients,
-//     price: price,
-//     start: start,
-//     end: end
-//   });
-// }

@@ -1,8 +1,8 @@
-02:30:41.293 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
-02:30:41.370 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000
-02:30:46.120 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - technica-de047-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 64ms, init: 0ms
-02:30:46.141 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace technica-de047-default-rtdb status Active to Active
-02:31:13.869 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.
-02:31:13.877 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO com.firebase.core.namespace.Terminator$Terminator - 1 actors left to terminate: technica-de047-default-rtdb
-02:31:13.882 [NamespaceSystem-akka.actor.default-dispatcher-8] INFO com.firebase.core.namespace.NamespaceActor - stopped namespace actor for technica-de047-default-rtdb
-02:31:13.886 [Thread-0] INFO com.firebase.server.forge.App$ - Graceful shutdown complete.
+10:16:28.686 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+10:16:28.770 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000
+10:16:33.303 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - technica-de047-default-rtdb successfully activated FBKV (SurveyIdle(0)) wait: 61ms, init: 0ms
+10:16:33.331 [NamespaceSystem-blocking-namespace-operation-dispatcher-6] INFO com.firebase.core.namespace.StateManager - Namespace technica-de047-default-rtdb status Active to Active
+10:17:45.458 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.
+10:17:45.466 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.Terminator$Terminator - 1 actors left to terminate: technica-de047-default-rtdb
+10:17:45.471 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO com.firebase.core.namespace.NamespaceActor - stopped namespace actor for technica-de047-default-rtdb
+10:17:45.474 [Thread-0] INFO com.firebase.server.forge.App$ - Graceful shutdown complete.
