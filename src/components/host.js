@@ -1,59 +1,69 @@
 import React from 'react';
-import {
-    Card,
-    Image,
-    View,
-    Heading,
-    Flex,
-    Badge,
-    Text,
-    Button,
-    useTheme,
-    Collection
-  } from '@aws-amplify/ui-react';
-
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Badge from 'react-bootstrap/Badge';
+import Modal from 'react-bootstrap/Modal';
+import { useState } from 'react';
 
 export default function Add(props) {
     //const {state, setState} = props.pState;
-    const { tokens } = useTheme();
-    const items = [
-    {
-      title: 'Fiordland National Park',
-      description:
-        'This national park includes the famous fjords of Milford, Dusky and Doubtful Sounds.',
-    },
-    {
-      title: 'Bay of Islands, North Island',
-      description:
-        'Three hours north of Auckland, this area features over 144 islands to explore.',
-    },
-    {
-      title: 'Queenstown, South Island',
-      description:
-        "This hopping town is New Zealand's adventure capital and is located right on Lake Wakatipu.",
-    },
-  ];
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
-  return (
-    <Collection
-      type="list"
-      items={items}
-      direction="row"
-      justifyContent="space-between"
-      wrap="wrap"
-    >
-      {(item, index) => (
-        <Card
-          key={index}
-          padding={tokens.space.medium}
-          maxWidth="180px"
-          fontSize={tokens.fontSizes.xs}
-        >
-          <Heading level={4}>{item.title}</Heading>
-          <Text>{item.description}</Text>
+    return (
+        <>
+        <style type="text/css">
+            {`
+        .btn-custom {
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.188);
+            background-color: #adffc7;
+        }
+
+        .btn-custom:hover {
+            background-color: #e8ffef;
+        }
+        `}
+        </style>
+
+        <Card style={{ width: '90vw' }}>
+          <Card.Body>
+            <Card.Title><b>{props.name}</b></Card.Title>
+            <Card.Text>
+              {props.menu} <Badge bg="secondary">{props.dietary}</Badge>
+            </Card.Text>
+            <Button variant="custom" onClick={handleShow}>See more</Button>
+          </Card.Body>
         </Card>
-      )}
-    </Collection>
-    );
 
+
+        <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+        className='modal'
+        >
+        <Modal.Header closeButton>
+          <Modal.Title>Host: {props.name}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body style={{ lineHeight: '1.4'}}>
+          <b>Date:</b> {props.date} <br/>
+          <b>Menu items:</b> {props.menu}<br/>
+          <b>Dietary restrictions:</b> {props.dietary}<br/>
+          <b>Price:</b> {props.price}
+
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="custom">Join</Button>
+        </Modal.Footer>
+      </Modal>
+        
+    </>
+      );
 }

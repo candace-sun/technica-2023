@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.body,.modal {
+  padding: 10px;  
+  font-family: Poppins;
+}
+
+.btn-custom {
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.188);
+  background-color: #adffc7;
+}
+
+h3 {
+  font-family: Poppins;
+}
