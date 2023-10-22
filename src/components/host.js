@@ -32,6 +32,7 @@ export default function Add(props) {
           <Card.Body>
             <Card.Title><b>{props.name}</b></Card.Title>
             <Card.Text>
+              {props.date} at {props.time}<br/>
               {props.menu} <Badge bg="secondary">{props.dietary}</Badge>
             </Card.Text>
             <Button variant="custom" onClick={handleShow}>See more</Button>
@@ -50,7 +51,7 @@ export default function Add(props) {
           <Modal.Title>Host: {props.name}</Modal.Title>
         </Modal.Header>
         <Modal.Body style={{ lineHeight: '1.4'}}>
-          <b>Date:</b> {props.date} <br/>
+          <b>Time:</b> {props.date} at {props.time} <br/>
           <b>Menu items:</b> {props.menu}<br/>
           <b>Dietary restrictions:</b> {props.dietary}<br/>
           <b>Price:</b> {props.price}
@@ -60,7 +61,7 @@ export default function Add(props) {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="custom">Join</Button>
+          <Button variant="custom">Register!</Button>
         </Modal.Footer>
       </Modal>
         

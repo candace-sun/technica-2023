@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -37,8 +38,16 @@
   }
 }
 
-.body,.modal {
-  padding: 10px;  
+.body {
+  padding: 30px;  
+  font-family: Poppins;
+  
+  background-color: #e8ffef;
+  height: 100vh;
+}
+
+.modal {
+  padding: 0px;  
   font-family: Poppins;
 }
 
