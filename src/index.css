@@ -33,14 +33,16 @@ button{
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.188);
-  transition: background-color 0.15s, color 0.15s;
+  margin-top:10px;
 }
 button:hover{
   opacity: .6;
 }
 
-.button:active{
+button:active{
   opacity: .4;
+  margin-left: 10px;
+  margin-right: 10px;
   box-shadow: none;
 
 }

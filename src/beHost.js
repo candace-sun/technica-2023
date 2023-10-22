@@ -2,7 +2,16 @@ import { getDatabase, ref, set } from "firebase/database";
 import { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 
+const onBackButtonEvent = (e) => {
 
+  e.preventDefault();var currentLocation = window.location.pathname;
+
+  history.push('${currentLocation}/mypage/new')};
+
+  useEffect(() => {window.addEventListener('popstate', onBackButtonEvent);return () => {window.removeEventListener('popstate', onBackButtonEvent);
+
+  };}, [])
+  
 class MealForm extends React.Component {
     constructor(props) {
       super(props);
