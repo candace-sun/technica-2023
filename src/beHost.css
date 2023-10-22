@@ -1,4 +1,4 @@
-body{
+.beHost-body{
   background-color: #e8ffef;
   align-items: center;
   font-family: Poppins;
@@ -6,7 +6,14 @@ body{
   margin: auto;
   margin-top: 100px;
 }
+.logo{
+  height: 100px;
+  border-radius: 40px;
+  top: 40px;
+  left: 70px;
+  position: fixed;
 
+}
 .everything{
   background-color: #f6fff8;
   border-style: dashed;
@@ -14,7 +21,7 @@ body{
   padding: 50px;
 }
 
-input{
+.beHost-name, .beHost-last, .beHost-email, .beHost-password{
   margin-top: 0;
   margin-bottom: 0;
   border-radius: 15px;
@@ -30,14 +37,14 @@ input{
   font-weight: 600;
 }
 
-.name, .last{
+.beHost-name, .beHost-last{
   width: 190px;
   height: 50px;
   margin-bottom: 10px;
   margin-right: 5px;
   color: gray;  
 }
-.email{
+.beHost-email, .beHost-password{
   display: block;
   width: 415px;
   height: 50px;
