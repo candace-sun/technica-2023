@@ -1,6 +1,8 @@
 
 import './infoSignUp.css'; 
 
+import {db } from "./index.js"
+
 export default function InfoSignUp(props) {
     document.body.style = 'background: #e8ffef;';
     return (

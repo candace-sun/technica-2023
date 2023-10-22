@@ -6,10 +6,8 @@ import Col from 'react-bootstrap/Col';
 import React, { useState, useEffect } from 'react';
 import Row from 'react-bootstrap/Row';
 
-
 import { collection, getDocs } from "firebase/firestore";
-import { getDatabase, ref, onValue } from "firebase/database";
-import {db } from "./index.js"
+import { db } from "./index.js"
 
 function HostList() {
   const [hosts_list, setHosts] = useState([]);

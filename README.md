@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+## What it does
+Terp2Table helps students living in the same building or vicinity to connect and dine together. This is to help students living off campus get cheap and easy food. This website allows hosts to post a time and date to serve food for a low price.  For people who live off campus, it is sometimes hard to get cheap food and cook it with their busy schedules. Many times students forget about eating and with this they can remember to eat and feel like it's not a chore when with other people. With Terp2Table, you can connect with neighbors, offer affordable dining, and build friendships. Discover fellow Terps in your apartment building, making it easy to find meal buddies and expand your social circle. Say goodbye to expensive takeout and hello to budget-friendly, homemade meals. Split grocery costs and cook nutritious dishes together. Share meals, connect with peers, and enhance your college experience!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How we built it
+Utilizing React.js/Bootstrap, Firebase, HTML, CSS, and JavaScript, we made a website allowing for login, posting, google authentication, and saving data. 
 
-## Available Scripts
+## Challenges we ran into
+There were many challenges we went through. We had to learn React but to get the ball rolling we had to start with what we knew. As some of our team worked on the website through HTML and CSS first, when converting that to React it changed an unexpected majority of the code and caused issues with overlapping CSS, so that set us back a couple of hours. There was also a problem with getting link routing in React to work properly, but we eventually were able to resolve this. Another problem was trying to get the authentication to work with Firebase. 
 
-In the project directory, you can run:
+## Accomplishments that we're proud of
+In the end, we were able to get some form of Google authentication working and our pages were all up and running. We were also able to get the data reading aspect of Firebase into our project which is a great accomplishment we made last minute. 
 
-### `npm start`
+## What we learned
+We learned about how to manage a project with frontend and backend components we were not all familiar with and more about how to use Git for project development. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## What's next for Terp2Table
+We would like to continue improving the Google authentication and adding a payment method and processing in-site. We can also include food photos and reviews for the guest and host to post to allow new customers more information. 

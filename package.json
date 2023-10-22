@@ -2,6 +2,7 @@
   "name": "technica-2023",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://candace-sun.github.io/technica-2023",
   "dependencies": {
     "@aws-amplify/ui-react": "^5.3.1",
     "@testing-library/jest-dom": "^5.17.0",
@@ -19,8 +20,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy" : "npm run build",  
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
