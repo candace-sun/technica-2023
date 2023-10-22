@@ -4,12 +4,14 @@ import './index.css';
 import Home from './Home';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { initializeApp } from "firebase/app";
 import { Link } from "react-router-dom";
 import { Outlet,BrowserRouter, Routes, Route } from "react-router-dom";
 import BeHost from './beHost.js';
 import HostList from './hostList.js';
 import InfoSignUp from './infoSignUp.js';
+
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -53,7 +55,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
+export const db = getFirestore(app);
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
